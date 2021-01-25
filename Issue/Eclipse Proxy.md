@@ -15,10 +15,9 @@
    -> 신뢰할 수 있는 루트 인증기관에 저장
 
 2. 자바에 인증서 매핑
-- keytool -storepass changeit -import -file "C:\Program Files\Java\jre1.8.0_181\lib\security\Samsung(0).crt" -keystore "C:\Program Files\Java\jre1.8.0_181\lib\security\cacerts" -alias samsungcert1
-- "C:\Program Files\Java\jre1.8.0_181\bin\keytool.exe" -import -file "C:\Program Files\Java\jre1.8.0_181\lib\security\Samsung(0).crt" -keystore "C:\Program Files\Java\jre1.8.0_181\lib\security\cacerts"  
+- keytool -storepass changeit -import -file "%JRE_HOME%\lib\security\Samsung(0).crt" -keystore "%JRE_HOME%\lib\security\cacerts" -alias samsungcert1
+- "%JRE_HOME%\bin\keytool.exe" -import -file "%JRE_HOME%\lib\security\Samsung(0).crt" -keystore "%JRE_HOME%\lib\security\cacerts"  
 
 3. 프록시 설정
 - Eclipse Windows - Preferences > General - Network Connections - Active Provider를 Manual로 변경.
 - HTTP 및 HTTPS 변경 ( Proxy IP:Port ) - 수원 사업장 Proxy
- => 수동프록시이므로, DNS 로 구성된 자동프록시 : 8088 시도해볼것
