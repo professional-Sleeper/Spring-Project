@@ -20,4 +20,5 @@
 
 3. 프록시 설정
 - Eclipse Windows - Preferences > General - Network Connections - Active Provider를 Manual로 변경.
-- HTTP 및 HTTPS 변경 ( 168.219.61.252:8080 ) - 수원 사업장 Proxy
+- HTTP 및 HTTPS 변경 ( Proxy IP:Port ) - 수원 사업장 Proxy
+ => 수동프록시이므로, DNS 로 구성된 자동프록시 : 8088 시도해볼것
